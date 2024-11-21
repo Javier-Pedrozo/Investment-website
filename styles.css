@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(242, 242, 242);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+    margin: 0;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+.graphic {
+    position: relative;
+    background-color: indianred;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.change{
+    position: relative;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgb(201, 238, 81);
+    border-radius: 5%;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.maker{
+    position: relative;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5%;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.top_protocols{
+    position: relative;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.rankings{
+    position: relative;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5%;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.elipsis_icon {
+    display: flex;
+    width: fit-content;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    padding: 16px;
+    gap: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid rgb(242, 242, 242);
+}
+
+@media (max-width: 800px) {
+    .grid-container > * {
+        grid-column-end: span 12;
+    }
+    
+    .grid-container {
+        grid-gap: 2rem 0;
+    }
+
+    .graphic {
+        
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .change {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+
+    .maker {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+
+    .top_protocols{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 9;
+        grid-row-end: 12;
+    }
+
+    .rankings {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 12;
+        grid-row-end: 15;
+    }
+
+}
